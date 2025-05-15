@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.margin {
+    @apply ml-[25px] mr-[25px] md:ml-[60px] md:mr-[60px] lg:ml-[100px] lg:mr-[100px] 2xl:ml-[150px] 2xl:mr-[150px]
+}
+
+.margin-about-left {
+    @apply ml-[25px] mr-0 md:ml-[60px] md:mr-0 lg:ml-[100px] lg:mr-0 2xl:ml-[150px] 2xl:mr-0
+}
+
+.margin-about-right {
+    @apply ml-0 mr-[25px] md:ml-0 md:mr-[60px] lg:ml-0 lg:mr-[100px] 2xl:ml-0 2xl:mr-[150px]
+}
+
+.margin-bottom {
+    @apply mb-[60px] md:mb-[80px] lg:mb-[100px] 2xl:mb-[120px] 
+}
+
+.h1-hero {
+    @apply font-bold text-[39.5px] 2xl:text-5xl pb-2 leading-snug lg:leading-normal
+}
+
+.h1 {
+    @apply font-bold text-xl md:text-3xl lg:text-[38px] 2xl:text-5xl lg:pb-12 2xl:pb-14 md:pb-8 pb-4 lg:leading-normal
+}
+
+.h1-cta {
+    @apply font-bold text-2xl lg:text-[28px] 2xl:text-5xl pb-3 leading-tight lg:leading-tight
+}
+
+.h1-about {
+    @apply font-bold text-3xl lg:text-[38px] 2xl:text-5xl pb-3 leading-tight lg:leading-tight
+}
+
+.btn-bg {
+    @apply py-[7px] px-5 bg-[#f87a2c] text-[#fbfbfb] rounded-[5px] cursor-pointer duration-500 hover:scale-90
+}
+
+.btn-border {
+    @apply py-[7px] px-5 border border-solid border-[#f87a2c] text-[#f87a2c] rounded-[5px] cursor-pointer duration-500 hover:scale-90
+}
+
+.container-testi {
+    @apply border-[1px] border-solid border-[#F87A2C] rounded-[15px] p-4 flex flex-col gap-2
+}
+
+.date {
+    @apply text-sm 2xl:text-lg
+}
+
+.icon-quote {
+    @apply text-[#f87a2c] text-xl 2xl:text-3xl
+}
+
+.icon-date {
+    @apply text-[#f87a2c] mt-[1.5px]
+}
+
+.testi {
+    @apply text-[13px] 2xl:text-lg leading-normal
+}
+
+.container-date {
+    @apply flex gap-1
+}
+
+.swiper {
+    @apply relative overflow-hidden
+}
+
+.swiper-wrapper {
+    @apply relative transition-transform duration-500 ease-in-out
+}
+
+.swiper-slide {
+    @apply flex-shrink-0
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+    @apply scale-90
+}
+
+.swiper-slide.swiper-slide-active {
+    @apply scale-100
+}
+
+.swiper-pagination-bullet {
+    @apply bg-[#f87a2c] opacity-50;
+}
+
+.swiper-pagination-bullet-active {
+    @apply bg-[#f87a2c] opacity-100;
+}
+
+.title-footer {
+    @apply font-medium text-[19px] 2xl:text-2xl pb-1
+}
+
+.title-unggul {
+    @apply font-medium text-lg 2xl:text-2xl
+}
+
+.desc-unggul {
+    @apply text-[12.5px] 2xl:text-lg leading-normal mt-[3px]
+}
+
+.container-iconUnggul {
+    @apply text-2xl 2xl:text-3xl p-2 rounded-[5px] bg-[#F87A2C] w-10 h-10 md:w-12 md:h-12 lg:w-12 lg:h-12 2xl:w-12 2xl:h-12 text-[#fbfbfb] flex justify-center items-center mb-[10px]
+}
+
+.container-unggul {
+    @apply duration-500 hover:bg-[#fbfbfb] hover:border hover:border-solid hover:border-[#f87a2c] hover:border-opacity-[75%] p-4 rounded-[5px] border border-solid border-[#fbffff]
+}
+
+.swiper-slide {
+    @apply md:w-[49%] lg:w-[24%] 2xl:w-[24%]
+}
+
+.container-kategori {
+    @apply p-3 flex border-[0.6px] border-solid border-[#343434] border-opacity-[75%] rounded-[3px] gap-3
+}
+
+.desc-kategori {
+    @apply text-xs
+}
+
+.total-produk-kategori {
+    @apply text-[11px]
+}
+
+.details {
+    @apply total-produk-kategori text-[#F87A2C] underline hover-2
+}
+
+.total-produk {
+    @apply flex justify-between
+}
+
+.img-kategori {
+    @apply rounded-[1px]
+}
+
+.text-kategori {
+    @apply flex flex-col justify-between
+}
+
+.img-gallery {
+    @apply rounded-[5px] h-full w-full object-cover
+}
+
+.colspan4 {
+    @apply md:col-span-4 lg:col-span-4 2xl:col-span-4
+}
+
+.colspan3 {
+    @apply md:col-span-3 lg:col-span-3 2xl:col-span-3
+}
+
+.colspan5 {
+    @apply md:col-span-5 lg:col-span-5 2xl:col-span-5
+}
+
+.colspan6 {
+    @apply md:col-span-6 lg:col-span-6 2xl:col-span-6
+}
+
+.rowspan6 {
+    @apply md:row-span-6 lg:row-span-6 2xl:row-span-6
+}
+
+.rowspan4 {
+    @apply md:row-span-4 lg:row-span-4 2xl:row-span-4
+}
+
+.rowspan5 {
+    @apply md:row-span-5 lg:row-span-5 2xl:row-span-5
+}
+
+.title-section {
+    @apply h1 md:text-center lg:text-center 2xl:text-center
+}
+
+.container-flashsale {
+    @apply border-[1px] border-solid border-[#FF7837] rounded-[5px] flex flex-col py-5 px-6
+}
+
+.title-disc {
+    @apply flex justify-between text-[#F87A2C] font-bold text-2xl 2xl:text-4xl pb-3
+}
+
+.content-flashsale {
+    @apply flex flex-col md:flex-row lg:flex-row 2xl:flex-row gap-6
+}
+
+.text-flashsale {
+    @apply flex flex-col gap-1
+}
+
+.produk-flashsale {
+    @apply font-medium
+}
+
+.desc-flashsale {
+    @apply text-xs 2xl:text-lg
+}
+
+.container-timer {
+    @apply text-base 2xl:text-2xl flex gap-2
+}
+
+.container-harga {
+    @apply flex gap-5
+}
+
+.before-flashsale {
+    @apply desc-flashsale line-through lg:mt-2
+}
+
+.harga-flashsale {
+    @apply text-[15px] 2xl:text-2xl text-[#FF7837]
+}
+
+.buynow-flashsale {
+    @apply text-xs bg-[#FF7837] py-2 w-[100px] text-center text-[#fbfbfb] font-medium rounded-[5px] hover:scale-90 duration-500 cursor-pointer
+}
+
+.paw-container {
+    @apply -rotate-45
+}
+
+.img-flashsale {
+    @apply lg:w-[40%]
+}
+
+.ornamen-flashsale {
+    @apply h-[80px]
+}
+
+.hover-navlink {
+    @apply cursor-pointer hover:text-[#FF7837] duration-500
+}
+
+.container-product {
+    @apply border-[0.8px] border-solid border-[#0b0b0b] border-opacity-[50%] p-[14px] rounded-[5px] min-w-[100%] hover:border-[#FF7837] duration-500
+}
+
+.star-icon {
+    @apply text-[#FF7837] text-sm 2xl:text-xl
+}
+
+.like {
+    @apply text-xs 2xl:text-xl text-[#0b0b0b]
+}
+
+.container-suka {
+    @apply flex gap-1 pb-[7px]
+}
+
+.rp {
+    @apply text-xs 2xl:text-lg
+}
+
+.harga {
+    @apply text-base 2xl:text-xl text-[#FF7837] pb-[2px]
+}
+
+.desc-product {
+    @apply text-xs 2xl:text-lg text-[#0b0b0b] pb-1
+}
+
+.product {
+    @apply font-semibold pb-[6px] text-sm lg:text-base 2xl:text-lg
+}
+
+.img-product {
+    @apply m-auto
+}
+
+.btn-like {
+    @apply flex justify-end h-6
+}
+
+.btn-liked {
+    @apply absolute text-[#FF7837] cursor-pointer
+}
+
+.btn-unlike {
+    @apply relative cursor-pointer
+}
+
+.btn-product {
+    @apply flex justify-between cursor-pointer 
+}
+
+.btn-bg-beli {
+    @apply text-xs text-[#fbfbfb] py-1 px-[6px] bg-[#FF7837] rounded-[5px] flex items-center duration-500 hover:scale-90 cursor-pointer
+}
+
+.btn-border-cart {
+    @apply py-1 px-3 border border-solid border-[#FF7837] rounded-[5px] flex items-center duration-500 hover:scale-90 cursor-pointer
+}
+
+.cart-icon {
+    @apply text-[#FF7837] text-xs
+}
+
+.btn-kategori {
+    @apply py-1 px-4 text-center flex items-center border border-solid border-[#FF7837] hover:bg-[#FF7837] duration-500 hover:scale-90 rounded-[10px] hover:text-[#fbfbfb] justify-center cursor-pointer min-w-[40%] lg:min-w-[10%] 2xl:min-w-[10%]
+}
+
+.hover-2 {
+    @apply hover:scale-90 cursor-pointer 
+}
+
+.icon-footer {
+    @apply 2xl:text-2xl xl:text-xl lg:text-lg md:text-base text-sm text-opacity-100 hover:text-opacity-80 hover:transition-all hover:duration-500 text-[#FBFBFB];
+}

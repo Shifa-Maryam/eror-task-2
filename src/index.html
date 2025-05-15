@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+</head>
+<body class="bg-[#FBFFFF] text-[#0b0b0b] text-sm md:text-base lg:[17px] 2xl:text-lg font-hanken overflow-x-hidden">
+    <header class="bg-[#fbfbfb] h-20 md:h-[93px] lg:h-[93px] 2xl:text-[93px] top-0 sticky z-10" data-aos="fade-down">
+        <div class="margin h-full flex justify-between items-center">
+            <div class="flex h-[30px] md:h-[50px] gap-2 items-center">
+                <img src="assets/logo.png" class="h-full">
+                <h1 class="text-lg md:text-xl font-bold">Lucky  Pet Shop</h1>
+            </div>
+
+            <iconify-icon id="btn-menu" icon="material-symbols:menu-rounded" class="lg:hidden 2xl:hidden text-3xl"></iconify-icon>
+
+            <nav id="menu" class="hidden absolute top-16 w-full left-0 right-0 bg-[#fbfbfb]">
+                <ul class="flex flex-col justify-center text-center gap-7 text-[17px] py-10">
+                    <li><a href="#beranda" class="hover-navlink">Beranda</a></li>
+                    <li><a href="#about" class="hover-navlink">Tentang Kami</a></li>
+                    <li><a href="#kategori" class="hover-navlink">Kategori Produk</a></li>
+                    <li><a href="#produk" class="hover-navlink">Produk</a></li>
+                </ul>
+            </nav>
+            
+            <nav class="hidden lg:block 2xl:block">
+                <ul class="flex gap-7 text-[17px]">
+                    <li><a href="#beranda" class="hover-navlink">Beranda</a></li>
+                    <li><a href="#about" class="hover-navlink">Tentang Kami</a></li>
+                    <li><a href="#kategori" class="hover-navlink">Kategori Produk</a></li>
+                    <li><a href="#produk" class="hover-navlink">Produk</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="margin margin-bottom flex md:justify-center lg:justify-between 2xl:justify-between items-center mt-10">
+        <div class="md:w-[80%] lg:w-[54%] 2xl:w-[50.5%] flex flex-col md:text-center lg:text-left" data-aos="fade-down">
+            <div class="relative">
+                <h1 class="h1-hero relative lg:w-[93%] 2xl:w-[93%]">Kebutuhan <span class="text-[#f87a2c]">Hewan</span> Anda Telah <span class="text-[#f87a2c]">Hadir di Lucky Pet Shop</span></h1>
+                <img src="assets/paw-hero.svg" class="absolute top-0 right-16 hidden lg:block 2xl:block">
+            </div>
+            <p class="pb-6">Lucky Pet Shop bertujuan untuk memberikan pelayanan terbaik bagi para pecinta hewan peliharaan dengan menyediakan produk-produk berkualitas dan layanan yang profesional.</p>
+            <div class="flex gap-2 md:justify-center lg:justify-start">
+                <a href="" class="btn-bg">Lihat Layanan</a>
+                <a href="" class="btn-border">Lihat Produk</a>
+            </div>
+        </div>
+
+        <img src="assets/image 1.svg" class="hidden lg:block 2xl:block w-[40%]" data-aos="zoom-in">
+    </section>
+
+    <section class="margin-about-left margin-about-left margin-bottom flex justify-between items-center">
+        <img src="assets/image 2.svg" class="hidden md:block lg:block 2xl:block md:w-[30%] lg:w-[40%] 2xl:w-[40%]" data-aos="zoom-in">
+
+        <div class="w-full md:w-[65%] lg:w-[55%] 2xl:w-[55%]" data-aos="fade-down">
+            <p class="font-medium text-lg pb-1">Tentang Kami</p>
+            <h1 class="h1-about">Kepedulian <span class="text-[#f87a2c]">Kami</span> untuk <span class="text-[#f87a2c]">Hewan Peliharaan</span> Anda</h1>
+            <p class="pb-3">Lucky Pet Shop adalah tempat yang tepat untuk hewan peliharaan Anda. Kami menawarkan produk dan jasa berkualitas tinggi untuk menjaga kesehatan dan kebahagiaan hewan peliharaan Anda.</p>
+            <div class="flex overflow-x-scroll md:overflow-hidden lg:overflow-hidden 2xl:overflow-hidden min-w-full md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 2xl:grid 2xl:grid-cols-2 pb-4 gap-2">
+                <div class="flex gap-1 items-center min-w-[50%]">
+                    <iconify-icon icon="mage:verified-check" class="text-[#f87a2c] text-xl mt-[2px]"></iconify-icon>
+                    <p>15 tahun berpengalaman</p>
+                </div>
+                <div class="flex gap-1 items-center min-w-[50%]">
+                    <iconify-icon icon="mage:verified-check" class="text-[#f87a2c] text-xl mt-[2px]"></iconify-icon>
+                    <p>Pelayanan Ramah & Baik</p>
+                </div>
+                <div class="flex gap-1 items-center min-w-[50%]">
+                    <iconify-icon icon="mage:verified-check" class="text-[#f87a2c] text-xl mt-[2px]"></iconify-icon>
+                    <p>Vitamin dan Obat Pilihan</p>
+                </div>
+                <div class="flex gap-1 items-center min-w-[50%]">
+                    <iconify-icon icon="mage:verified-check" class="text-[#f87a2c] text-xl mt-[2px]"></iconify-icon>
+                    <p>Produk Pilihan & Berkualitas</p>
+                </div>
+            </div>
+            
+            <div class="btn-bg w-[35%] lg:w-[23%]">
+                <a href="" class="text-center">Selengkapnya</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="margin margin-bottom">
+        <h1 class="title-section">Keunggulan <span class="text-[#F87A2C]">Lucky Pet Shop</span></h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 gap-3" data-aos="fade-down">
+            <div class="container-unggul">
+                <div class="container-iconUnggul">
+                    <img src="assets/icon-bowl.svg" alt="">
+                </div>
+                <h2 class="title-ungggul">Makanan Berkualitas</h2>
+                <p class="desc-unggul">Menyediakan makanan khusus untuk hewan peliharaan yang berkualitas dan sesuai dengan kebutuhan nutrisi hewan.</p>
+            </div>
+
+            <div class="container-unggul">
+                <div class="container-iconUnggul">
+                    <iconify-icon icon="hugeicons:shampoo"></iconify-icon>
+                </div>
+                <h2 class="title-ungggul">Perawatan Tepat</h2>
+                <p class="desc-unggul">Menawarkan produk perawatan yang tepat untuk menjaga kebersihan dan kesehatan hewan peliharaan.</p>
+            </div>
+
+            <div class="container-unggul">
+                <div class="container-iconUnggul">
+                    <iconify-icon icon="material-symbols-light:pet-supplies"></iconify-icon>
+                </div>
+                <h2 class="title-ungggul">Aksesoris Menarik</h2>
+                <p class="desc-unggul">Menyediakan aksesoris yang menarik dan fungsional untuk menambah gaya dan identitas hewan peliharaan.</p>
+            </div>
+
+            <div class="container-unggul">
+                <div class="container-iconUnggul">
+                    <iconify-icon icon="healthicons:health-alt"></iconify-icon>
+                </div>
+                <h2 class="title-ungggul">Kesehatan Terjamin</h2>
+                <p class="desc-unggul">Menawarkan suplemen kesehatan dan vitamin untuk meningkatkan kesehatan dan imunitas hewan peliharaan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="margin margin-bottom">
+        <h1 class="title-section">Kategori Produk <span class="text-[#F87A2C]">Lucky Pet Shop</span></h1>
+
+        <div id="kategori" class="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-3" data-aos="fade-down">
+            <div id="perawatan" class="container-kategori">
+                <img src="assets/image 3.svg" class="img-kategori">
+                <div class="text-kategori">
+                    <h2>Perawatan</h2>
+                    <p class="desc-kategori">Kami menawarkan produk perawatan hewan seperti sampo, kondisioner,  untuk merawat hewan peliharaan.</p>
+                    <div class="total-produk">
+                        <p class="total-produk-kategori">250 Produk Tersedia</p>
+                        <a href="" class="details">Lihat Produk</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="makanan" class="container-kategori">
+                <img src="assets/image 4.svg" class="img-kategori">
+                <div class="text-kategori">
+                    <h2>Makanan</h2>
+                    <p class="desc-kategori">Menyediakan makanan berkualitas untuk kesehatan  hewan peliharaan seperti anjing, kucing, dlsb.</p>
+                    <div class="total-produk">
+                        <p class="total-produk-kategori">250 Produk Tersedia</p>
+                        <a href="" class="details">Lihat Produk</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mainan" class="container-kategori">
+                <img src="assets/image 5.svg" class="img-kategori">
+                <div class="text-kategori">
+                    <h2>Mainan</h2>
+                    <p class="desc-kategori">Kami menyediakan mainan hewan seperti bola, boneka, dan scratching post, menghibur hewan peliharaan.</p>
+                    <div class="total-produk">
+                        <p class="total-produk-kategori">250 Produk Tersedia</p>
+                        <a href="" class="details">Lihat Produk</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-kategori">
+                <img src="assets/image 6.svg" class="img-kategori">
+                <div class="text-kategori">
+                    <h2>Aksesoris</h2>
+                    <p class="desc-kategori">Kami menawarkan aksesoris hewan seperti kalung dan gelang nama. Menambah gaya dan identitas hewan.</p>
+                    <div class="total-produk">
+                        <p class="total-produk-kategori">250 Produk Tersedia</p>
+                        <a href="" class="details">Lihat Produk</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-kategori">
+                <img src="assets/image 7.svg" class="img-kategori">
+                <div class="text-kategori">
+                    <h2>Perabotan</h2>
+                    <p class="desc-kategori">Kami menyediakan perlengkapan untuk hewan peliharaan seperti kandang dan kasur hewan. Menunjang kebutuhannya.</p>
+                    <div class="total-produk">
+                        <p class="total-produk-kategori">250 Produk Tersedia</p>
+                        <a href="" class="details">Lihat Produk</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-kategori">
+                <img src="assets/image 8.svg" class="img-kategori">
+                <div class="text-kategori">
+                    <h2>Kesehatan</h2>
+                    <p class="desc-kategori">Kami menawarkan suplemen kesehatan dan vitamin untuk hewan peliharaan, kesehatan dan imunitas.</p>
+                    <div class="total-produk">
+                        <p class="total-produk-kategori">250 Produk Tersedia</p>
+                        <a href="" class="details">Lihat Produk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="margin margin-bottom flex flex-col md:flex-col lg:flex-row 2xl:flex-row gap-5 justify-between">
+        <div class="container-flashsale"  data-aos="fade-down">
+            <div class="title-disc">
+                <h3>Diskon Produk</h3>
+                <p class="px-2 py-1 text-base rounded-[10px] flex items-center text-[#fbfbfb] bg-[#F87A2C]">Hemat 35%</p>
+            </div>
+
+            <div class="content-flashsale">
+                <img src="assets/image 9.svg" class="img-flashsale">
+                <div class="text-flashsale">
+                    <h4 class="produk-flashsale">1 Paket Snack Kering Anjing Jinx</h4>
+                    <p class="desc-flashsale">Snack kering ini ada beberapa varian dapat berikan pada hewan peliharaannya.</p>
+                    <div class="container-timer">
+                        <h2 id="hours">00</h2>
+                        <h2>:</h2>
+                        <h2 id="minutes">00</h2>
+                        <h2>:</h2>
+                        <h2 id="seconds">00</h2>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex flex-col gap-3">
+                            <div class="container-harga">
+                                <h2 class="before-flashsale">Rp 310.000 </h2>
+                                <h2 class="harga-flashsale">Rp 270.000 </h2>
+                            </div>
+                            <a href="" class="buynow-flashsale">Beli Sekarang</a>
+                        </div>
+    
+                        <img src="assets/guguk.svg" class="ornamen-flashsale">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-flashsale" data-aos="fade-down">
+            <div class="title-disc">
+                <h3>Diskon Produk</h3>
+                <p class="px-2 py-1 text-base rounded-[10px] flex items-center text-[#fbfbfb] bg-[#F87A2C]">Hemat 35%</p>
+            </div>
+
+            <div class="content-flashsale">
+                <img src="assets/image 10.svg" class="img-flashsale">
+                <div class="text-flashsale">
+                    <h4 class="produk-flashsale">1 Paket Snack Buah Kucing</h4>
+                    <p class="desc-flashsale">Snack buah ini tersedia dengan berbagai varian rasa buah yang dapat anda terima</p>
+                    <div class="container-timer">
+                        <h2 id="hours2">00</h2>
+                        <h2>:</h2>
+                        <h2 id="minutes2">00</h2>
+                        <h2>:</h2>
+                        <h2 id="seconds2">00</h2>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex flex-col gap-3">
+                            <div class="container-harga">
+                                <h2 class="before-flashsale">Rp 310.000 </h2>
+                                <h2 class="harga-flashsale">Rp 270.000 </h2>
+                            </div>
+                            <a href="" class="buynow-flashsale">Beli Sekarang</a>
+                        </div>
+    
+                        <img src="assets/kucing.svg" class="ornamen-flashsale">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section class="margin margin-bottom">
+        <h1 class="title-section">Produk Terlaris <span class="text-[#F87A2C]">Lucky Pet Shop</span></h1>
+
+        <div class="flex overflow-x-scroll min-w-full md:overflow-hidden lg:overflow-hidden md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 gap-[14px]" data-aos="fade-down">
+            <div class="container-product">
+                <div class="btn-like">
+                    <iconify-icon icon="solar:heart-outline" id="like-btn1" class="btn-unlike"></iconify-icon>
+                    <iconify-icon icon="solar:heart-bold" id="liked-btn1" class="btn-liked hidden"></iconify-icon>
+                </div>
+                <img src="assets/produk 1.svg" class="img-product">
+                <h2 class="product">Kandang Portable</h2>
+                <p class="desc-product">Kadang Portable untuk peliharaan Anda.</p>
+                <div class="container-suka">
+                    <iconify-icon icon="tabler:star-filled" class="star-icon"></iconify-icon>
+                    <p class="like">4.6/5 (98 reviews)</p>
+                </div>
+                <div class="btn-product">
+                    <h2 class="harga"><span class="rp">Rp</span> 150.000</h2>
+                    <div class="flex gap-2">
+                        <a href="" class="btn-bg-beli">Beli Sekarang</a>
+                        <a href="" class="btn-border-cart"><iconify-icon icon="fontisto:shopping-basket-add" class="cart-icon"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-product">
+                <div class="btn-like">
+                    <iconify-icon icon="solar:heart-outline" id="like-btn2" class="btn-unlike"></iconify-icon>
+                    <iconify-icon icon="solar:heart-bold" id="liked-btn2" class="btn-liked hidden"></iconify-icon>
+                </div>
+                <img src="assets/produk 2.svg" class="img-product">
+                <h2 class="product">Kalung Hewan</h2>
+                <p class="desc-product">Aksesoris kalung untuk peliharaan Anda.</p>
+                <div class="container-suka">
+                    <iconify-icon icon="tabler:star-filled" class="star-icon"></iconify-icon>
+                    <p class="like">4.6/5 (98 reviews)</p>
+                </div>
+                <div class="btn-product">
+                    <h2 class="harga"><span class="rp">Rp</span> 150.000</h2>
+                    <div class="flex gap-2">
+                        <a href="" class="btn-bg-beli">Beli Sekarang</a>
+                        <a href="" class="btn-border-cart"><iconify-icon icon="fontisto:shopping-basket-add" class="cart-icon"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-product">
+                <div class="btn-like">
+                    <iconify-icon icon="solar:heart-outline" id="like-btn3" class="btn-unlike"></iconify-icon>
+                    <iconify-icon icon="solar:heart-bold" id="liked-btn3" class="btn-liked hidden"></iconify-icon>
+                </div>
+                <img src="assets/produk 3.svg" class="img-product">
+                <h2 class="product">Makanan Kering</h2>
+                <p class="desc-product">Snack  ini dapat untuk kucing peliharaan.</p>
+                <div class="container-suka">
+                    <iconify-icon icon="tabler:star-filled" class="star-icon"></iconify-icon>
+                    <p class="like">4.6/5 (98 reviews)</p>
+                </div>
+                <div class="btn-product">
+                    <h2 class="harga"><span class="rp">Rp</span> 35.000</h2>
+                    <div class="flex gap-2">
+                        <a href="" class="btn-bg-beli">Beli Sekarang</a>
+                        <a href="" class="btn-border-cart"><iconify-icon icon="fontisto:shopping-basket-add" class="cart-icon"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-product">
+                <div class="btn-like">
+                    <iconify-icon icon="solar:heart-outline" id="like-btn4" class="btn-unlike"></iconify-icon>
+                    <iconify-icon icon="solar:heart-bold" id="liked-btn4" class="btn-liked hidden"></iconify-icon>
+                </div>
+                <img src="assets/produk 4.svg" class="img-product">
+                <h2 class="product">Mangkuk Makanan</h2>
+                <p class="desc-product">Mangkuk makanan stainless untuk hewan.</p>
+                <div class="container-suka">
+                    <iconify-icon icon="tabler:star-filled" class="star-icon"></iconify-icon>
+                    <p class="like">4.6/5 (98 reviews)</p>
+                </div>
+                <div class="btn-product">
+                    <h2 class="harga"><span class="rp">Rp</span> 35.000</h2>
+                    <div class="flex gap-2">
+                        <a href="" class="btn-bg-beli">Beli Sekarang</a>
+                        <a href="" class="btn-border-cart"><iconify-icon icon="fontisto:shopping-basket-add" class="cart-icon"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="margin margin-bottom">
+        <h1 class="title-section">Produk <span class="text-[#F87A2C]">Lucky Pet Shop</span></h1>
+
+        <div class="flex overflow-x-scroll lg:overflow-hidden 2xl:overflow-hidden w-full lg:justify-center gap-7 lg:gap-4 mb-7">
+            <a href="" class="btn-kategori">Semua Produk</a>
+            <a href="" class="btn-kategori">Perawatan</a>
+            <a href="" class="btn-kategori">Makanan</a>
+            <a href="" class="btn-kategori">Mainan</a>
+            <a href="" class="btn-kategori">Aksesoris</a>
+            <a href="" class="btn-kategori">Perabotan</a>
+            <a href="" class="btn-kategori">Kesehatan</a>
+        </div>
+
+        <div class="flex overflow-x-scroll min-w-full md:overflow-hidden lg:overflow-hidden md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 gap-[14px]" data-aos="fade-down">
+            <div class="container-product">
+                <div class="btn-like">
+                    <iconify-icon icon="solar:heart-outline" id="like-btn5" class="btn-unlike"></iconify-icon>
+                    <iconify-icon icon="solar:heart-bold" id="liked-btn5" class="btn-liked hidden"></iconify-icon>
+                </div>
+                <img src="assets/produk 5.svg" class="img-product">
+                <h2 class="product">Makanan Kering</h2>
+                <p class="desc-product">Makanan kering untuk Anjing peliharaan.</p>
+                <div class="container-suka">
+                    <iconify-icon icon="tabler:star-filled" class="star-icon"></iconify-icon>
+                    <p class="like">4.6/5 (98 reviews)</p>
+                </div>
+                <div class="btn-product">
+                    <h2 class="harga"><span class="rp">Rp</span> 65.000</h2>
+                    <div class="flex gap-2">
+                        <a href="" class="btn-bg-beli">Beli Sekarang</a>
+                        <a href="" class="btn-border-cart"><iconify-icon icon="fontisto:shopping-basket-add" class="cart-icon"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-product">
+                <div class="btn-like">
+                    <iconify-icon icon="solar:heart-outline" id="like-btn6" class="btn-unlike"></iconify-icon>
+                    <iconify-icon icon="solar:heart-bold" id="liked-btn6" class="btn-liked hidden"></iconify-icon>
+                </div>
+                <img src="assets/produk 6.svg" class="img-product">
+                <h2 class="product">Vitamin Bulu</h2>
+                <p class="desc-product">Vitamin untuk pelebat bulu hewan Anda</p>
+                <div class="container-suka">
+                    <iconify-icon icon="tabler:star-filled" class="star-icon"></iconify-icon>
+                    <p class="like">4.5/5 (96 reviews)</p>
+                </div>
+                <div class="btn-product">
+                    <h2 class="harga"><span class="rp">Rp</span> 35.000</h2>
+                    <div class="flex gap-2">
+                        <a href="" class="btn-bg-beli">Beli Sekarang</a>
+                        <a href="" class="btn-border-cart"><iconify-icon icon="fontisto:shopping-basket-add" class="cart-icon"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-product">
+                <div class="btn-like">
+                    <iconify-icon icon="solar:heart-outline" id="like-btn7" class="btn-unlike"></iconify-icon>
+                    <iconify-icon icon="solar:heart-bold" id="liked-btn7" class="btn-liked hidden"></iconify-icon>
+                </div>
+                <img src="assets/produk 7.svg" class="img-product">
+                <h2 class="product">Bola Karet</h2>
+                <p class="desc-product">Alat Permainan untuk peliharaan Anda.</p>
+                <div class="container-suka">
+                    <iconify-icon icon="tabler:star-filled" class="star-icon"></iconify-icon>
+                    <p class="like">4.3/5 (92 reviews)</p>
+                </div>
+                <div class="btn-product">
+                    <h2 class="harga"><span class="rp">Rp</span> 35.000</h2>
+                    <div class="flex gap-2">
+                        <a href="" class="btn-bg-beli">Beli Sekarang</a>
+                        <a href="" class="btn-border-cart"><iconify-icon icon="fontisto:shopping-basket-add" class="cart-icon"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-product">
+                <div class="btn-like">
+                    <iconify-icon icon="solar:heart-outline" id="like-btn8" class="btn-unlike"></iconify-icon>
+                    <iconify-icon icon="solar:heart-bold" id="liked-btn8" class="btn-liked hidden"></iconify-icon>
+                </div>
+                <img src="assets/produk 8.svg" class="img-product">
+                <h2 class="product">Sisir Hewan</h2>
+                <p class="desc-product">Paket Sisir untuk merawat hewan Anda.</p>
+                <div class="container-suka">
+                    <iconify-icon icon="tabler:star-filled" class="star-icon"></iconify-icon>
+                    <p class="like">4.4/5 (96 reviews)</p>
+                </div>
+                <div class="btn-product">
+                    <h2 class="harga"><span class="rp">Rp</span> 35.000</h2>
+                    <div class="flex gap-2">
+                        <a href="" class="btn-bg-beli">Beli Sekarang</a>
+                        <a href="" class="btn-border-cart"><iconify-icon icon="fontisto:shopping-basket-add" class="cart-icon"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-product">
+                <div class="btn-like">
+                    <iconify-icon icon="solar:heart-outline" id="like-btn9" class="btn-unlike"></iconify-icon>
+                    <iconify-icon icon="solar:heart-bold" id="liked-btn9" class="btn-liked hidden"></iconify-icon>
+                </div>
+                <img src="assets/produk 9.svg" class="img-product">
+                <h2 class="product">Kalung Nama</h2>
+                <p class="desc-product">Kalung untuk aksesoris peliharaan Anda.</p>
+                <div class="container-suka">
+                    <iconify-icon icon="tabler:star-filled" class="star-icon"></iconify-icon>
+                    <p class="like">4.5/5 (95 reviews)</p>
+                </div>
+                <div class="btn-product">
+                    <h2 class="harga"><span class="rp">Rp</span> 40.000</h2>
+                    <div class="flex gap-2">
+                        <a href="" class="btn-bg-beli">Beli Sekarang</a>
+                        <a href="" class="btn-border-cart"><iconify-icon icon="fontisto:shopping-basket-add" class="cart-icon"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-product">
+                <div class="btn-like">
+                    <iconify-icon icon="solar:heart-outline" id="like-btn10" class="btn-unlike"></iconify-icon>
+                    <iconify-icon icon="solar:heart-bold" id="liked-btn10" class="btn-liked hidden"></iconify-icon>
+                </div>
+                <img src="assets/produk 10.svg" class="img-product">
+                <h2 class="product">Set Tali dan kalung</h2>
+                <p class="desc-product">Set tali & kalung hewan peliharaan Anda</p>
+                <div class="container-suka">
+                    <iconify-icon icon="tabler:star-filled" class="star-icon"></iconify-icon>
+                    <p class="like">4.6/5 (96 reviews)</p>
+                </div>
+                <div class="btn-product">
+                    <h2 class="harga"><span class="rp">Rp</span> 40.000</h2>
+                    <div class="flex gap-2">
+                        <a href="" class="btn-bg-beli">Beli Sekarang</a>
+                        <a href="" class="btn-border-cart"><iconify-icon icon="fontisto:shopping-basket-add" class="cart-icon"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-product">
+                <div class="btn-like">
+                    <iconify-icon icon="solar:heart-outline" id="like-btn11" class="btn-unlike"></iconify-icon>
+                    <iconify-icon icon="solar:heart-bold" id="liked-btn11" class="btn-liked hidden"></iconify-icon>
+                </div>
+                <img src="assets/produk 11.svg" class="img-product">
+                <h2 class="product">Kandang Besi</h2>
+                <p class="desc-product">Kandang simple untuk hewan peliharaan.</p>
+                <div class="container-suka">
+                    <iconify-icon icon="tabler:star-filled" class="star-icon"></iconify-icon>
+                    <p class="like">4./5 (95 reviews)</p>
+                </div>
+                <div class="btn-product">
+                    <h2 class="harga"><span class="rp">Rp</span> 90.000</h2>
+                    <div class="flex gap-2">
+                        <a href="" class="btn-bg-beli">Beli Sekarang</a>
+                        <a href="" class="btn-border-cart"><iconify-icon icon="fontisto:shopping-basket-add" class="cart-icon"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-product">
+                <div class="btn-like">
+                    <iconify-icon icon="solar:heart-outline" id="like-btn12" class="btn-unlike"></iconify-icon>
+                    <iconify-icon icon="solar:heart-bold" id="liked-btn12" class="btn-liked hidden"></iconify-icon>
+                </div>
+                <img src="assets/produk 12.svg" class="img-product">
+                <h2 class="product">Sisir Hewan</h2>
+                <p class="desc-product">Paket Sisir untuk merawat hewan Anda.</p>
+                <div class="container-suka">
+                    <iconify-icon icon="tabler:star-filled" class="star-icon"></iconify-icon>
+                    <p class="like">4.4/5 (96 reviews)</p>
+                </div>
+                <div class="btn-product">
+                    <h2 class="harga"><span class="rp">Rp</span> 35.000</h2>
+                    <div class="flex gap-2">
+                        <a href="" class="btn-bg-beli">Beli Sekarang</a>
+                        <a href="" class="btn-border-cart"><iconify-icon icon="fontisto:shopping-basket-add" class="cart-icon"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="margin margin-bottom">
+        <h1 class="title-section">Ulasan Pelanggan <span class="text-[#F87A2C]">Lucky Pet Shop</span></h1>
+
+        <div class="swiper">
+            <div class="swiper-wrapper pb-11" data-aos="fade-down">
+                <div class="container-testi swiper-slide">
+                    <iconify-icon icon="raphael:quote" class="icon-quote"></iconify-icon>
+                    <h2>Afan Khadafy</h2>
+                    <p class="testi">Mainan dan aksesoris disini lucu lucu banget sih, sampe ketagihan beli berbagai macam warna lainnya</p>
+                    <div class="container-date">
+                        <iconify-icon icon="ic:round-date-range" class="icon-date"></iconify-icon>
+                        <p class="date">12 Februari 2025</p>
+                    </div>
+                </div>
+
+                <div class="container-testi swiper-slide">
+                    <iconify-icon icon="raphael:quote" class="icon-quote"></iconify-icon>
+                    <h2>Basmallah Gralid</h2>
+                    <p class="testi">Mainan dan aksesoris disini lucu lucu banget sih, sampe ketagihan beli berbagai macam warna lainnya.</p>
+                    <div class="container-date">
+                        <iconify-icon icon="ic:round-date-range" class="icon-date"></iconify-icon>
+                        <p class="date">28 Maret 2025</p>
+                    </div>
+                </div>
+
+                <div class="container-testi swiper-slide">
+                    <iconify-icon icon="raphael:quote" class="icon-quote"></iconify-icon>
+                    <h2>Raden Rakha</h2>
+                    <p class="testi">Mainan dan aksesoris disini lucu lucu banget sih, sampe ketagihan beli berbagai macam warna lainnya</p>
+                    <div class="container-date">
+                        <iconify-icon icon="ic:round-date-range" class="icon-date"></iconify-icon>
+                        <p class="date">02 April 2025</p>
+                    </div>
+                </div>
+
+                <div class="container-testi swiper-slide">
+                    <iconify-icon icon="raphael:quote" class="icon-quote"></iconify-icon>
+                    <h2>Eby Rizta Ramdhan</h2>
+                    <p class="testi">Mainan dan aksesoris disini lucu lucu banget sih, sampe ketagihan beli berbagai macam warna lainnya</p>
+                    <div class="container-date">
+                        <iconify-icon icon="ic:round-date-range" class="icon-date"></iconify-icon>
+                        <p class="date">12 April 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="margin margin-bottom flex flex-col md:flex-row justify-between">
+        <div class="p-4 border border-solid border-[#FF7837] w-[43%] md:block lg:block 2xl:block hidden" data-aos="zoom-in">
+            <img src="assets/image 11.svg" class="">
+        </div>
+
+        <div class="p-5 border border-solid border-[#FF7837] flex flex-col justify-center md:w-[55%] lg:w-[55%] 2xl:w-[55%] text-sm" data-aos="fade-down">
+            <div class="relative lg:w-[83%] pb-2 lg:leading-normal">
+                <h1 class="h1-cta relative">Cari <span class="text-[#f87a2c]">Kebutuhan Hewan Peliharaan?</span> Semua Hadir di <span class="text-[#f87a2c]">Lucky Pet Shop</span></h1>
+                <img src="assets/paw-hero.svg" class="absolute bottom-5 right-5 h-[30px] hidden lg:block 2xl:block">
+            </div>
+            <p class="pb-6">Keperluan hewan peliharaan Anda ada di sini, dari makanan, grooming, mainan, hingga kandang dan kasur lainnya yang nyaman. Belanja mudah, hemat waktu, dan peliharaan pun senang!</p>
+            <div class="flex gap-2 md:justify-center lg:justify-start">
+                <a href="" class="btn-bg">Belanja Produk</a>
+                <a href="" class="btn-border">Kategori Produk</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="margin margin-bottom">
+        <h1 class="title-section">Galeri <span class="text-[#F87A2C]">Lucky Pet Shop</span></h1>
+
+        <div class="grid grid-cols-2 md:grid-cols-16 lg:grid-cols-16 2xl:grid-cols-16 gap-1 md:gap-4 lg:gap-4 2xl:gap-4" data-aos="fade-down">
+            <img src="assets/gallery 1.svg" class="img-gallery rowspan4 colspan4">
+            <img src="assets/gallery 2.svg" class="img-gallery rowspan5 colspan6">
+            <img src="assets/gallery 3.svg" class="img-gallery rowspan5 colspan6">
+            <img src="assets/gallery 4.svg" class="img-gallery rowspan6 colspan4">
+            <img src="assets/gallery 5.svg" class="img-gallery rowspan5 colspan6">
+            <img src="assets/gallery 6.svg" class="img-gallery rowspan5 colspan6">
+            <img src="assets/gallery 7.svg" class="img-gallery rowspan5 colspan4 cover">
+            <img src="assets/gallery 8.svg" class="img-gallery rowspan5 colspan5 cover">
+            <img src="assets/gallery 9.svg" class="img-gallery rowspan5 colspan4">
+            <img src="assets/gallery 10.svg" class="img-gallery rowspan5 colspan3">
+        </div>
+    </section>
+
+    <footer class="text-[#fbfbfb] bg-[#CF580F] text-sm md:text-base lg:text-base 2xl:text-lg">
+        <div class="margin">
+            <div class="flex flex-col lg:flex-row 2xl:flex-row gap-5 justify-between py-5">
+                <div class="flex flex-col gap-2 lg:w-[27%] 2xl:w-[30%]">
+                    <div class="flex h-[45px] gap-2 items-center">
+                        <img src="assets/logo-footer.png" class="h-full">
+                        <h1 class="text-xl font-bold">Lucky  Pet Shop</h1>
+                    </div>
+                    <p>Kami menyediakan berbagai macam produk  perawatan Hewan Peliharaan dan bersedia dalam melayani Anda.</p>
+                    <div class="flex gap-1">
+                        <a href="#" class=""><iconify-icon icon="ic:baseline-facebook" class="icon-footer"></iconify-icon></a>
+                        <a href="#" class=""><iconify-icon icon="ri:whatsapp-fill" class="icon-footer"></iconify-icon></a>
+                        <a href="#" class=""><iconify-icon icon="lineicons:tiktok-alt" class="icon-footer"></iconify-icon></a>
+                        <a href="#" class=""><iconify-icon icon="mingcute-instagram-fill" class="icon-footer"></iconify-icon></a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row lg:flex-row 2xl:flex-row gap-5 justify-between lg:w-[65%] 2xl:w-[63%]">
+                    <div>
+                        <h2 class="title-footer">Menu</h2>
+                        <nav>
+                            <ul>
+                                <li class="hover-2"><a href="#beranda" class="cursor-pointer">Beranda</a></li>
+                                <li class="hover-2"><a href="#about" class="cursor-pointer">Tentang Kami</a></li>
+                                <li class="hover-2"><a href="#kategori" class="cursor-pointer">Kategori Produk</a></li>
+                                <li class="hover-2"><a href="#produk" class="cursor-pointer">Produk</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div>
+                        <h2 class="title-footer">Toko Online Kami</h2>
+                        <nav>
+                            <ul class="underline">
+                                <li class="hover-2"><a href="#" class="cursor-pointer">Tokopedia</a></li>
+                                <li class="hover-2"><a href="#" class="cursor-pointer">Lazada</a></li>
+                                <li class="hover-2"><a href="#" class="cursor-pointer">Shopee</a></li>
+                                <li class="hover-2"><a href="#" class="cursor-pointer">Bli Bli</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div>
+                        <h2 class="title-footer">Kategori Produk</h2>
+                        <nav>
+                            <ul class="underline">
+                                <li class="hover-2"><a href="#perawatan" class="cursor-default">Perawatan</a></li>
+                                <li class="hover-2"><a href="#makanan" class="cursor-default">Makanan</a></li>
+                                <li class="hover-2"><a href="#mainan" class="cursor-default">Mainan</a></li>
+                                <li class="hover-2"><a href="#kategori" class="cursor-default">Lihat Produk Lainnya..</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <p class="py-3 border-solid border-[#fff] border-t-[1.5px] text-center">&copy; copyright Lucky Pet Shop</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 600,
+        });
+    </script>
+</body>
+</html>
