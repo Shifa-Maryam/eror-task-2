@@ -36,11 +36,11 @@
 }
 
 .btn-bg {
-    @apply py-[7px] px-5 bg-[#f87a2c] text-[#fbfbfb] rounded-[5px] cursor-pointer duration-500 hover:scale-90
+    @apply py-[7px] px-5 bg-[#f87a2c] text-[#fbfbfb] rounded-[5px] cursor-pointer hover:bg-opacity-80 hover:text-opacity-80 hover:transition-all hover:duration-500
 }
 
 .btn-border {
-    @apply py-[7px] px-5 border border-solid border-[#f87a2c] text-[#f87a2c] rounded-[5px] cursor-pointer duration-500 hover:scale-90
+    @apply py-[7px] px-5 border border-solid border-[#f87a2c] text-[#f87a2c] rounded-[5px] cursor-pointer hover:bg-slate-50 hover:border-opacity-80 hover:text-opacity-80 hover:transition-all hover:duration-500
 }
 
 .container-testi {
@@ -224,7 +224,7 @@
 }
 
 .buynow-flashsale {
-    @apply text-xs bg-[#FF7837] py-2 w-[100px] text-center text-[#fbfbfb] font-medium rounded-[5px] hover:scale-90 duration-500 cursor-pointer
+    @apply text-xs bg-[#FF7837] py-2 w-[100px] text-center text-[#fbfbfb] font-medium rounded-[5px] hover:bg-opacity-80 hover:text-opacity-80 hover:transition-all hover:duration-500 cursor-pointer
 }
 
 .paw-container {
@@ -240,7 +240,7 @@
 }
 
 .hover-navlink {
-    @apply cursor-pointer hover:text-[#FF7837] duration-500
+    @apply cursor-pointer hover:text-[#FF7837] hover:duration-500 hover:transition-all
 }
 
 .container-product {
@@ -296,23 +296,23 @@
 }
 
 .btn-bg-beli {
-    @apply text-xs text-[#fbfbfb] py-1 px-[6px] bg-[#FF7837] rounded-[5px] flex items-center duration-500 hover:scale-90 cursor-pointer
+    @apply text-xs text-[#fbfbfb] py-1 px-[6px] bg-[#FF7837] rounded-[5px] flex items-center hover:bg-opacity-80 hover:text-[#fbfbfb] hover:transition-all hover:duration-500 cursor-pointer
 }
 
 .btn-border-cart {
-    @apply py-1 px-3 border border-solid border-[#FF7837] rounded-[5px] flex items-center duration-500 hover:scale-90 cursor-pointer
+    @apply py-1 px-3 border border-solid border-[#FF7837] rounded-[5px] flex items-center duration-500 hover:bg-slate-50 hover:border-opacity-80 hover:text-opacity-80 hover:transition-all hover:duration-500 cursor-pointer
 }
 
 .cart-icon {
-    @apply text-[#FF7837] text-xs
+    @apply text-[#FF7837] text-xs group-hover:text-opacity-80
 }
 
 .btn-kategori {
-    @apply py-1 px-4 text-center flex items-center border border-solid border-[#FF7837] hover:bg-[#FF7837] duration-500 hover:scale-90 rounded-[10px] hover:text-[#fbfbfb] justify-center cursor-pointer min-w-[40%] lg:min-w-[10%] 2xl:min-w-[10%]
+    @apply py-1 px-4 text-center flex items-center border border-solid border-[#FF7837] hover:bg-[#FF7837] hover:bg-opacity-80 rounded-[10px] hover:text-[#fbfbfb] hover:transition-all hover:duration-500 justify-center cursor-pointer min-w-[40%] lg:min-w-[10%] 2xl:min-w-[10%]
 }
 
 .hover-2 {
-    @apply hover:scale-90 cursor-pointer 
+    @apply hover:text-opacity-80 hover:transition-all hover:duration-500 cursor-pointer 
 }
 
 .icon-footer {
